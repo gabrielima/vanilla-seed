@@ -1,0 +1,82 @@
+.container {
+  padding-left: 2.5%;
+  padding-right: 2.5%;
+
+  @include breakpoint($container) {
+    padding-left: calc(50% - #{$container/2});
+    padding-right: calc(50% - #{$container/2});
+  }
+}
+
+.container-full {
+  @include breakpoint($container) {
+    padding-left: calc(50% - #{$container/2});
+    padding-right: calc(50% - #{$container/2});
+  }
+}
+
+.container-box {
+  width: 95%;
+  max-width: $container;
+  margin: 0 auto;
+}
+
+.row {
+  font-size: 0;
+}
+
+*[class^='xs-'],
+*[class^='sm-'],
+*[class^='md-'],
+*[class^='lg-'] {
+  position: relative;
+  width: 100%;
+	min-height: 1px;
+  padding-left: $gutter / 2;
+  padding-right: $gutter / 2;
+  font-size: $base-font-size;
+  display: inline-block;
+  vertical-align: top;
+  *zoom: 1;
+}
+
+.no-gutter *[class^='xs-'],
+.no-gutter *[class^='sm-'],
+.no-gutter *[class^='md-'],
+.no-gutter *[class^='lg-'] {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+
+@include xs {
+  @for $i from 1 through $columns {
+    .xs-#{$i} {
+      width: (100% / $columns) * $i;
+    }
+  }
+}
+
+@include sm {
+  @for $i from 1 through $columns {
+    .sm-#{$i} {
+      width: (100% / $columns) * $i;
+    }
+  }
+}
+
+@include md {
+  @for $i from 1 through $columns {
+    .md-#{$i} {
+      width: (100% / $columns) * $i;
+    }
+  }
+}
+
+@include lg {
+  @for $i from 1 through $columns {
+    .lg-#{$i} {
+      width: (100% / $columns) * $i;
+    }
+  }
+}

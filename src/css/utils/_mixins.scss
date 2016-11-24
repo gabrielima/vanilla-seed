@@ -1,0 +1,49 @@
+@mixin xs {
+  @media all and (min-width: $xs) {
+    @content;
+  }
+}
+
+@mixin sm {
+  @media all and (min-width: $sm) {
+    @content;
+  }
+}
+
+@mixin md {
+  @media all and (min-width: $md) {
+    @content;
+  }
+}
+
+@mixin lg {
+  @media all and (min-width: $lg) {
+    @content;
+  }
+}
+
+@mixin breakpoint($from, $to: 0) {
+  @if $to > $from {
+    @media all and (min-width: $from) and (max-width: $to) {
+      @content;
+    }
+  }
+
+  @else {
+    @media all and (min-width: $from) {
+      @content;
+    }
+  }
+}
+
+@mixin clearfix {
+  *zoom: 1;
+  &:before, &:after {
+    display: table;
+
+    content: " ";
+  }
+  &:after {
+    clear: both;
+  }
+}

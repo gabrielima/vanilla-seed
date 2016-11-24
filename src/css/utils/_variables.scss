@@ -1,0 +1,62 @@
+/*
+*  Colors
+*----------------------- */
+$text-color: #333;
+$heading-color: #111;
+
+$primary-color: $text-color;
+$error-color: #e74c3c;
+$success-color: #27ae60;
+$link-color: $text-color;
+
+
+/*
+*  Typography
+*----------------------- */
+$base-font-family: Arial, sans-serif;
+$base-font-root: 16px;
+$base-font-weight: 300;
+$base-font-line-height: 1.5 !default;
+
+$base-font-size: 1rem !default;
+$base-font-lg:   1.1rem !default;
+$base-font-sm:   1.05rem !default;
+$base-font-xs:   1rem !default;
+
+$heading-font-family: 'Helvetica Neue', Helvetica, Arial sans-serif;
+$heading-font-weight: 700;
+$heading-font-h1: 2.2rem !default;
+$heading-font-h2: 2rem !default;
+$heading-font-h3: 1.8rem !default;
+$heading-font-h4: 1.6rem !default;
+$heading-font-h5: 1.3rem !default;
+$heading-font-h6: 1rem !default;
+
+/*
+*  Grid
+*----------------------- */
+
+//Starting from
+$xs: 0;
+// $sm: 480px;
+$sm: 660px;
+$md: 768px;
+$lg: 992px;
+$xg: 1100px;
+
+$container: 1100px;
+$gutter: 20px;
+$columns: 12;
+
+/*
+*  Indexing
+*----------------------- */
+$index1: 10;
+$index2: 20;
+$index3: 30;
+$index4: 40;
+$index5: 50;
+$index6: 60;
+$index7: 70;
+$index8: 80;
+$index9: 90;

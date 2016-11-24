@@ -1,0 +1,32 @@
+* {
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  color: $text-color;
+  line-height: $base-font-line-height;
+  font-family: $base-font-family;
+  font-weight: $base-font-weight;
+  font-size: $base-font-size;
+
+  @include xs { font-size: $base-font-xs; }
+  @include sm { font-size: $base-font-sm; }
+  @include lg { font-size: $base-font-lg; }
+}
+
+.heading {
+  font-family: $heading-font-family;
+  font-weight: $heading-font-weight;
+  color: $heading-color;
+  margin-bottom: .5rem;
+}
+
+h1, h2, h3, h4, h5, h6 { @extend .heading; }
+
+a { color: inherit; text-decoration: none; }
+a, a:hover, a:focus, a:active { text-decoration: none; }
